@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recybook-librairie-tunisie</title>
+       <meta name="description" content="RecyBook 1 ére librarie de vente de livres d'occasion en ligne,Retrouvez  des nouvautés et des livres de toutes éditions "> 
+        <link rel="icon" type="image/png" href="./images/logsb.png" />
+        <link href="./home-page.css" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/8d62a07aa6.js"crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+
+        <header class="navbar">
+            <i onclick="openclose()" class="fas fa-bars my-btn"></i>
+            <div class="logo">
+                <a href="home-page.html"> <img src="./images/log1.png" height="150px" /></a>
+            </div>
+            <div class="icon-box">
+                <i class="far fa-user"></i>
+                <div class="basket-groupe">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p id="score-basket">(0) </p>
+                </div>
+
+            </div>   
+        </header>
+   
+        
+        <div class="list2">
+            
+           
+            <ul>
+                    
+                    <li > <a href="./livres -tunisiens.html"> Livres tunisiens</a></li>
+                    <li> <a href="./livres devleppement personel2.html"> livres de developpemnt personel</a></li>
+                    <li> <a href="./romans2.html"> romans</a></li>
+                    <li> <a href="./contact.html"> contact</a></li>
+           </ul>
+            <!-- <button class="button-cat"> Contact</button>  -->
+            <li class="cont"> <a href="./romans.html"> contact</a></li>
+        </div> 
+        <div class="sidebar-container close">
+
+            <ul class="navigation-mobile">
+                <li class="tendances"> Tendances</li>
+                    <li> <a href="#nouveautes">Nouveautés</a></li>
+                    <li> <a href="#promotions">promotions</a></li>
+                    <li> <a href="#meileurs ventes">Meilleures ventes</a></li>
+                <li class="categories"> Categories</li>
+                    <li > <a href="./livres -tunisiens.html"> Livres tunisiens</a></li>
+                    <li> <a href="./livres-anglais.css"> Livres en anglais</a></li>
+                    <li> <a href="./romans.html"> romans</a></li>
+           </ul>
+        </div>
+       
+        <span class="couverture" style="background-image:url('./images/banner-bg.jpg')">
+
+            <div class="div-slogan">
+               <h1> 1ére librairie en ligne  </h1>   
+                <article class="slogan"> Decouvrir d'autres romans en promotions</article>
+                <div class="connect-buttons">
+                    <a href="form.html"> <button class="btn1"> s'inscrire</button></a>
+                    <a href="connect.html"> <button class="btn2"> se connceter</button></a>
+                </div>
+            </div>
+            <div class="div-images">
+                <div class=" images">
+                    <img src="./images/elle et lui2.jpg">
+                    <img src="./images/Et-si-cetait-vrai_451.jpg">
+                    <img src="./images/fille.jpeg">
+                </div>
+                <div>
+                <a href="/romans2.html" class="discover"><button
+                        class="discover"> Decouvrir</button></a>
+                </div>
+            </div>
+</div>
+      </span>   
+         
+
+        <div class="container">
+            <div class="title-decoration" id="nouveautes">
+                <hr>
+                <h1> Livre en nouveautés</h1>
+                <hr>
+            </div>
+            <div class="books-container">
+                <div class="book">
+                    <a href="./book3.html"><img src="./images/miracle-morning-offrez-vous-un-supplément-de-vie.jpg"></a>
+                    <p> Miracle morning</p>
+                    <p> 30 TND</p>
+                    <button class="btn-basket" onclick="addbasket()"> Ajouter au panier</button>
+                </div>
+                
+                <div class="book"> <img src="./images/le-sel-de-tous-les-oublis.jpg">
+                    <p> le sel de tous les oublis</p>
+                    <p> 25 TND</p>
+                    <button class="btn-basket" onclick="addbasket()"> Ajouter au panier</button>
+                </div>
+                <div class="book"> <img src="./images/adet.jpg">
+                    <p> Adet</p>
+                    <p> 30 TND</p>
+                    <button class="btn-basket" onclick="addbasket()"> Ajouter au panier</button>
+                </div>
+                <div class="book books">
+                    <img src="./images/moubelet.jpg">
+                    <p>فن اللامبالاة: لعيش حياة تخالف المألوف</p>
+                    <p> 30TND</p>
+                    <button class="btn-basket" onclick="addbasket()"> Ajouter au panier</button>
+                </div>
+                <div class="book books"> <img src="./images/هستيريا (1).jpg">
+                    <p>هستيريا</p>
+                    <p> 28 TND </p>
+                    <button class="btn-basket" onclick="addbasket()"> Ajouter au panier</button>
+                </div>
+                <div class="book books"> <img src="./images/أسرار-عائلية.jpg">
+                    <p>أسرار عائلية </p>
+                    <p> 30 TND</p>
+                    <button class="btn-basket" onclick="addbasket()"> Ajouter au panier</button>
+                </div>
+
+
+            </div>
+            <div class="middle">
+            
+                <div class="title-decoration" id="nouveautes">
+                    <hr>
+                    <h2> Livre de la Semaine</h2>
+                    <hr>
+                </div>
+                <div class="couv2">
+                    <img src="./images/elena.jpg">
+                    <div class="elena">
+                    <p> ls étaient les petits « fiancés » de l’Enclos de la Trinité,
+                        au fin fond du désert mexicain. Aux yeux de tout le village,
+                        ces deux-là se marieraient. Jusqu’au jour où leur route
+                        croise celle d’un inconnu. Sous les yeux de Diego pétrifié
+                        par la peur, l’homme viole Elena. Brise leur doux rêve.
+                        Tout, après ça, a eu un goût...</p>
+                        <button> Decouvrir le livre</button>
+                    </div>
+            </div>
+        </div>
+        
+            <div class="container">
+                <div class="title-decoration">
+                    <hr>
+                    <p>Livres en  Promotions</p>
+                    <hr>
+                </div>
+                <div class="books-container">
+                    <div class="book">
+                        <a href="book1.html"> <img src="./images/التياس.jpg"></a>
+                        <p> التياس</p>
+                        <p> 20 TND</p>
+                        <button class="btn-basket" onclick="addbasket()"> Ajouter au panier</button>
+                    </div>
+                    <div class="book"> <img
+                            src="./images/اللعنة-03-سلسلة-البعد-الخامس.jpg">
+                        <p> للعنة-03-سلسلة-البعد-الخامس</p>
+                        <p> 8.50 TND</p>
+                        <button class="btn-basket" onclick="addbasket()"> Ajouter au panier</button>
+                    </div>
+                    <div class="book"> <img src="./images/تاريخ-تونس.jpg">
+                        <p> تاريخ-تونس</p>
+                        <p> 45 TND</p>
+                        <button class="btn-basket" onclick="addbasket()"> Ajouter au panier</button>
+                    </div>
+                    <div class="book">
+                        <img
+                            src="./images/les-femmes-de-la-maison-houssaynîte.jpg">
+                        <p>les-femmes-de-la-maison-houssaynîte</p>
+                        <p> 30TND</p>
+                        <button class="btn-basket" onclick="addbasket()"> Ajouter au panier</button>
+                    </div>
+                    <div class="book"> <img
+                            src="./images/nawaat-hors-série-3.jpg"></a>
+                    <p> Nawat</p>
+                    <p> 28 TND </p>
+                    <button class="btn-basket" onclick="addbasket()"> Ajouter au panier</button>
+                </div>
+                <div class="book"> <img src="./images/saada.jpg">
+                    <p>Al Saada</p>
+                    <p> 30 TND</p>
+                    <button class="btn-basket" onclick="addbasket()"> Ajouter au panier</button>
+                </div>
+            </div>
+            <div class="livraison">
+                <div class="card" >
+                    <div class="part1">
+                        <i class="fa-solid fa-truck"></i>
+                    </div>
+                    <div class="part2">
+                        <article class="row1">
+                            Livraison partout en tunisie
+                        </article>
+                        <article class="row2">
+                            Livraison gratuite
+                        </article>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="part1">
+                        <i class="fab fa-cc-mastercard"></i>
+                    </div>
+                    <div class="part2">
+                        <article class="row1">
+                            Paiement en ligne sécurisé
+                        </article>
+                        <article class="row2">
+                            Ou paiment à la livraison
+                            /<article>
+
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="part1">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="part2">
+                                <article class="row1">
+                                    Service clients
+                                </article>
+                                <article class="row2">
+                                    De 8:30 à 18:30
+                                </article>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="part1">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="part2">
+                                <article class="row1">
+                                    Vous cherchez un livre
+                                </article>
+                                <article class="row2">
+                                    on vous le livre à tout moment
+                                </article>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="container">
+                        <div class="title-decoration">
+                            <hr>
+                            <p> Meilleures ventes</p>
+                            <hr>
+                        </div>
+                        <div class="books-container">
+                            <div class="book">
+                                <img src="./images/the-awakening.jpg"/>
+                                <p> the awkening</p>
+                                <p> 25 TND</p>
+                                <button class="btn-basket"> Ajouter au panier</button>
+                            </div>
+                            <div class="book"> <img
+                                    src="./images/les-impatientes.jpg">
+                                <p> Les impatientes</p>
+                                <p>25 TND</p>
+                                <button class="btn-basket"> Ajouter au panier</button>
+                            </div>
+                            <div class="book"> <img src="./images/just-another-tear-drop.jpg">
+                                <p> juste another tear drop</p>
+                                <p> 45 TND</p>
+                                <button class="btn-basket"> Ajouter au panier</button>
+                            </div>
+
+
+
+                            <div class="book">
+                                <img
+                                    src="./images/où-es-tu-.jpg">
+                                <p>Où es tu</p>
+                                <p> 30TND</p>
+                                <button class="btn-basket"> Ajouter au panier</button>
+                            </div>
+                            <div class="book"> <img
+                                    src="./images/le-premier-jour.jpg">
+                                <p>Le premier jour</p>
+                                <p> 28 TND </p>
+                                <button class="btn-basket"> Ajouter au panier</button>
+                            </div>
+                            <div class="book"> <img
+                                    src="./images/la-mauvaise-vie.jpg">
+                                <p>La mauvaise vie </p>
+                                <p> 30 TND</p>
+                                <button class="btn-basket"> Ajouter au panier</button>
+                            </div>
+                        </div>
+
+                        <div class="container-avis">
+                            <div class="container">
+                                <div class="title-decoration">
+                                    <hr>
+                                    <p> Temoinages</p>
+                                    <hr>
+                                </div>
+                                <div class="div-avis">
+                                    <div class="avis">
+                                        <div> <img src="./images/avis.jpg"
+                                                height="50px"/></div>
+                                        <div class="mon-avis">
+                                            <p>merci pour votre
+                                                professionalisme.<br>
+                                                je suis tres satisfaite
+                                                votre service
+                                                Dans le confinement j'ai lu
+                                                beaucoup de livres
+                                            </p>
+
+                                            <p class="nom">Mr.Mohamed</p>
+                                        </div>
+                                    </div>
+                                    <div class="avis">
+                                        <div> <img src="./images/avis2.jpg"
+                                                height="60px"/></div>
+                                        <div class="mon-avis">
+                                            <p>
+                                                Merci pour la livraison et le
+                                                cadeau<br>
+                                                service impecable et personel
+                                                competants<br>
+                                                je recommande vivement
+                                            </p>
+                                            <p class="nom"> Mme Nawel</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="avis">
+                                        <div> <img src="./images/avis3.jpg"
+                                                height="50px"/></div>
+                                        <div class="mon-avis">
+                                            <p>
+                                                Aussi tot commandés <br>
+                                                Presque aussi tot recùs 
+                                                Fiabilités,Efficacité et choix
+                                                ecalirés<br>
+                                                c'est la meilleure librairie
+                                                <br>
+                                                Bravo kiteby!
+                                            </p>
+                                            <p class="nom"> Mr mourad</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="part">
+                                <div class="container">
+                                    <div class="title-decoration">
+                                        <hr>
+                                        <p> Nos partenaires</p>
+                                        <hr>
+                                    </div>
+
+                                    <div class="partenaires">
+                                        <img src="./images/apolina.jpg"
+                                            height="100px"/>
+                                        <img src="./images/masira.jpg"
+                                            height="100px"/>
+                                        <img src="./images/elzayed.jpg"
+                                            height="100px"/>
+                                        <img src="./images/script.jpg"
+                                            height="100px">
+                                        <img src="./images/janoub.jpg"
+                                            height="100px"/>
+                                        <img src="./images/noukouch.jpg"
+                                            height="100px"/>
+                                        <img src="./images/abjadiet.jpg"
+                                            height="100px"/>
+
+                                    </div>
+                                </div>
+                            
+                                
+
+
+        
+                            </div>                        
+        <div class="about">
+            <div class="left">
+                <img src="./images/log1.png" width="180px"/>
+            </div>
+            <div class="right">
+                KITEBY est <strong> librairie en ligne </strong>qui propose une large
+                sélection de l'offre éditoriale tunisienne (en français et en
+                arabe), ainsi que des ouvrages édités en France. Les achats sur
+                notre site s'effectuent de manière fiable et sécurisée
+            </div>
+        </div>
+
+        
+        <hr>
+                        </div>
+
+            <footer>
+            <div class="footer1">
+                <div class="contact">
+                    <div class="row">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p> Aouina Diar Soukra</p>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-phone"></i>
+                        <p> 5214666</p>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-envelope"></i>
+                        <p> chaymaamouri02@gmail.com</p>
+                    </div>
+                </div>
+                <div class="liens">
+                    <p> Liens utiles</p>
+                    <a href="./livres -tunisiens.html"><p> livres tunisiens</p></a>
+                    <a href="./romans.html"><p>romans</p></a>
+                    <a href="./livres anglais.html"><p> livres anglais</p></a>
+                </div>
+                <div class="liens">
+                    <a href="./livres -tunisiens.html"><p> Nouveautes</p></a>
+                    <a href="./romans.html"><p>promotions</p></a>
+                    <a href="./livres anglais.html"><p>meilleurs ventes</p></a>
+                    <a href="contact.html"><p>Contactez-nous</p></a>
+                </div>
+                <div class="new">
+                    <div class="part1">
+                        <p> ABONNEZ VOUS<br> A NEWSLETTER</p>
+                        <input type="adress" placeholder="votre e-mail">
+                    </div>
+                    <button> S'abonner</button>
+                </div>
+            </div>
+            
+
+            <div class="footer2">
+                <div class="copyright">
+                    <i class="fas fa-copyright"></i>
+                    <p> Copyright KITEBY</p>
+                </div>
+            </div>
+        </footer>
+        <script src="./home-page.js"></script>
+        </body>
+</html>

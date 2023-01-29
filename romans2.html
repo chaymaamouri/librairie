@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romans</title>
+    <link href="./romans2.css" rel="stylesheet"/>
+    <link rel="icon" type="image/png" href="./images/logsb.png" />
+   
+    </head>
+
+    <header class="navbar">
+        <i onclick="openclose()" class="fas fa-bars my-btn"></i>
+       
+        <div class="logo">
+            <a href="home-page.html"> <img src="./images/log1.png" height="150px" /></a>
+        </div>
+        <div class="icon-box">
+            <i class="far fa-user"></i>
+            <div class="basket-groupe">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p id="score-basket">(0) </p>
+            </div>
+
+        </div>   
+    </header>
+
+    
+    <div class="list2">
+        
+        <ul>
+                
+                <li > <a href="./livres -tunisiens.html"> Livres tunisiens</a></li>
+                <li> <a href="./livres devleppement personel.html"> livres de developpemnt personel</a></li>
+                <li> <a href="./romans.html"> romans</a></li>
+       </ul>
+       
+    </div> 
+    <div class="sidebar-container close">
+
+        <ul class="navigation-mobile">
+            <li class="tendances"> Tendances</li>
+                <li> <a href="#nouveautes">Nouveautés</a></li>
+                <li> <a href="#promotions">promotions</a></li>
+                <li> <a href="#meileurs ventes">Meilleures ventes</a></li>
+            <li class="categories"> Categories</li>
+                <li > <a href="./livres -tunisiens.html"> Livres tunisiens</a></li>
+                <li> <a href="./livres-anglais.css"> Livres en anglais</a></li>
+                <li> <a href="./romans.html"> romans</a></li>
+       </ul>
+    </div>
+   
+            <div class="livres">
+            <div class="title-decoration" id="nouveautes">
+                <hr>
+                <p> Marc Levy</p>
+                <hr>
+            </div>
+            <div class="books-container">
+                <div class="book">
+                    <a href="book1.html"> <img src="./images/nuit2.jpg"></a>
+                    <p> La premiére nuit</p>
+                    <p> 20 TND</p>
+                    <button class="btn-basket" onclick="addbasket()"> Ajouter au panier</button>
+                </div>
+                <div class="book">
+                    <img src="./images/elle et lui2.jpg">
+                    <p> elle et lui</p>
+                    <p> 8.50 TND</p>
+                    <button class="btn-basket" onclick="addbasket()"> Ajouter au panier</button>
+                </div>
+                <div class="book"> <img src="./images/noa2.jpg">
+                    <p> noa</p>
+                    <p> 45 TND</p>
+                    <button class="btn-basket" onclick="addbasket()"> Ajouter au panier</button>
+                </div>
+        
+            
+       
+                <div class="book">
+                    <img src="./images/vol.jpg">
+                    <p>le voleur d'ombre</p>
+                    <p> 30TND</p>
+                    <button class="btn-basket" onclick="addbasket()"> Ajouter au panier</button>
+                </div>
+                <div class="book"> <img src="./images/Et-si-cetait-vrai_451.jpg"></a>
+                    <p> ci s'etait vrai</p>
+                    <p> 28 TND </p>
+                    <button class="btn-basket" onclick="addbasket()"> Ajouter au panier</button>
+                </div>
+                <div class="book"> <img src="./images/elle.jpg">
+                    <p>fille comme elle </p>
+                    <p> 30 TND</p>
+                    <button class="btn-basket" onclick="addbasket()"> Ajouter au panier</button>
+                </div>
+        </div>
+    </div>
+    <div class="livres">
+        <div class="title-decoration" id="nouveautes">
+            <hr>
+            <p> Guillame musso</p>
+            <hr>
+        </div>
+        <div class="books-container">
+            <div class="book">
+                <a href="book1.html"> <img src="./images/_parce-que-je-t-aime.jpg"></a>
+                <p> Parce que je t'aime</p>
+                <p> 20 TND</p>
+                <button class="btn-basket" onclick="addbasket()"> Ajouter au panier</button>
+            </div>
+            <div class="book">
+                <img src="./images/7ans.jpg">
+                <p> 7ans aprés</p>
+                <p> 8.50 TND</p>
+                <button class="btn-basket" onclick="addbasket()"> Ajouter au panier</button>
+            </div>
+            <div class="book"> <img src="./images/demain_1.jpg">
+                <p> Demain</p>
+                <p> 45 TND</p>
+                <button class="btn-basket" onclick="addbasket()"> Ajouter au panier</button>
+            </div>
+    
+        
+   
+            <div class="book">
+                <img src="./images/papier.jpg">
+                <p>la fille de papier</p>
+                <p> 30TND</p>
+                <button class="btn-basket" onclick="addbasket()"> Ajouter au panier</button>
+            </div>
+            <div class="book"> <img src="./images/instant.jpg"></a>
+                <p> L'instant present</p>
+                <p> 28 TND </p>
+                <button class="btn-basket" onclick="addbasket()"> Ajouter au panier</button>
+            </div>
+            <div class="book"> <img src="./images/fille.jpeg">
+                <p>djerba-absolument </p>
+                <p> 30 TND</p>
+                <button class="btn-basket" onclick="addbasket()"> Ajouter au panier</button>
+            </div>
+    </div>
+</div>
+<div class="about">
+    <div class="left">
+        <img  src="./images/log1.png" width="180px"/>
+    </div>
+    <div class="right">
+        KITEBY est une librairie en ligne qui propose une large
+        sélection de l'offre éditoriale tunisienne (en français et en
+        arabe), ainsi que des ouvrages édités en France. Les achats sur
+        notre site s'effectuent de manière fiable et sécurisée
+    </div>
+</div>
+
+
+<hr>
+<footer>
+    <div class="footer1">
+    <div class="contact">
+        <div class="row">
+            <i class="fas fa-map-marker-alt"></i>
+            <p> Aouina Diar Soukra</p>
+        </div>
+        <div class="row">
+            <i class="fas fa-phone"></i>
+            <p> 5214666</p>
+        </div>
+        <div class="row">
+            <i class="fas fa-envelope"></i>
+            <p> chaymaamouri02@gmail.com</p>
+        </div>
+    </div>
+    <div class="liens">
+        <p> Liens utiles</p>
+        <a href="./livres -tunisiens.html"><p> livres tunisiens</p></a>
+        <a href="./romans.html"><p>romans</p></a>
+        <a href="./livres anglais.html"><p> livres anglais</p></a>
+        
+    
+    </div>
+    <div class="liens">
+        <a href="./livres -tunisiens.html"><p> Nouveautes</p></a>
+        <a href="./romans.html"><p>promotions</p></a>
+        <a href="./livres anglais.html"><p>meilleurs ventes</p></a>
+        <a href="contact.html"><p>Contactez-nous</p></a>
+    </div>
+    <div class="new">
+        <div class="part1">
+        <p> ABONNEZ VOUS<br> A NEWSLETTER</p>
+        <input type="adress" placeholder="votre e-mail">
+        </div>
+        <button> S'abonner</button>
+    </div>
+    </div>
+    
+    <div class="footer2">
+    <div class="copyright">
+        <i class="fas fa-copyright"></i>
+        <p> Copyright KITEBY</p>
+    </div>
+    </div>
+    </footer>
+    
+</body>
+
+
+
+<script>
+function addbasket()
+{
+let score=0
+let basket=document.getElementById("score-basket")
+
+score=score+1
+basket.innerHTML="("+ score +")" 
+}
+function openClose() {
+    sidebar = document.querySelector(".sidebar-container");
+    btn = document.querySelector(".my-btn");
+    if (sidebar.className === "sidebar-container") {
+      sidebar.classList.add("close");
+      btn.classList.add("fa-bars");
+      btn.classList.remove("fa-times");
+    } else {
+      sidebar.classList.remove("close");
+      btn.classList.add("fa-times");
+      btn.classList.remove("fa-bars");
+      
+    }
+  }
+  
+  btn = document.querySelector(".my-btn");
+  btn.addEventListener("click", () => openClose());
+</script>
+
+    <script src="https://kit.fontawesome.com/8d62a07aa6.js" crossorigin="anonymous"></script>
+    
+
+</html>

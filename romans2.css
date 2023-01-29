@@ -1,0 +1,394 @@
+@font-face {
+    font-family:poppins ;
+    src: url(./fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: poppinsl;
+    src: url(./fonts/Poppins-Light.ttf);
+}
+body{
+    margin: 130px 0 0 0;
+    font-size: 12px;
+    font-family: poppins;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+header{
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    width: 90vw;
+    height: 70px;
+    padding:0 5vw;
+    top: 0;
+    align-items: center;
+    font-size: 1.3rem;
+   
+    
+}
+
+.icon-box{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 20%;
+    
+   
+}
+.icon-box i{
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: black;
+    
+}
+
+ .basket-groupe{
+    position: relative;
+    gap:5px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: poppins;
+    font-size: 0.8rem;
+ }
+ .basket-groupe i{
+    font-size: 1.2rem;
+ }
+
+#score-basket{
+    position: absolute;
+    font-size: 0.7rem;
+    bottom: 3px;
+    left:20px;
+    color: black;
+
+}
+ .sidebar-container{
+    background-color:rgb(28, 28, 92);
+    position: fixed;
+    top: 130px;
+    left: 0;
+    width: 300px;
+    height: 100vh;
+    transition: all .5s ease-out;
+    transform: translate(0%);
+    opacity: 100%;
+    color: white;
+    display: none;
+  
+    
+    
+ }
+    
+    .close{
+        transform: translate(-100%);
+        opacity: 100%;
+    }
+
+
+
+
+.navigation-mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0px 0 10px;
+    gap:3px;
+    font-size: 0.9rem;
+
+}
+    
+
+
+
+.sidebar-container li {
+    list-style: none;
+   
+}
+.sidebar-container a{
+    color: white;
+    text-decoration:none ;
+    cursor: pointer;
+    padding:8px 0;
+    display:block;
+    text-transform: capitalize;
+    transition: 0.2s ease-out;
+
+}
+
+.categories{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    
+}
+.categories hr{
+    width: 100%;
+    margin: 0;
+    border:none;
+    border-bottom: 1.5px solid; 
+   
+}
+.categories,.tendances{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+   
+
+
+.my-btn{
+   font-size: 0.8rem;
+   display: none;
+   color: black !important;
+   cursor: pointer;
+}
+
+
+.button-cat{
+    border:1px black solid;
+    font-family: inherit;
+    background-color:transparent;
+    color: black;
+    width: 160px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.list2 {
+    font-family: poppinsl;
+    display: flex;
+    font-size: 1.05rem;
+    align-items: center;
+    justify-content:left;
+    padding: 10px 5vw;
+    flex-direction: row;
+    background-color: #ef2346;
+    position: fixed;
+    top:70px;
+    width:90vw ;
+    gap:40px;
+    
+   
+}
+.list2 ul{
+   
+    text-align: center;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.list2 li{
+    
+    list-style: none;
+
+}
+.list2 a{
+   
+    text-decoration: none;
+    color:white;
+    cursor: pointer;
+    transition: all .3s;
+}
+.list2 a:hover{
+    color: black;
+}
+.connect-buttons button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    /* border: 0.5px solid black; */
+    font-family: poppins;
+    padding: 10 10px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: all .5s;
+    
+}
+.btn1{
+    background-color: white;
+    color: black;
+    border: 0.5px black solid;
+}
+.btn2{
+    background-color: black;
+    color:white;
+    border:0.5px black solid ;
+}
+ .btn2:hover{
+    background-color: white;
+    color: black;
+    border: 0.5px black solid;
+}
+.btn1:hover{
+    background-color: black;
+    color:white;
+    border:0.5px black solid ;
+}
+.connect-buttons{
+    display: flex;
+    gap:20px;
+}
+.connect-buttons a{
+    text-decoration: none;
+}
+.connect-buttons a{
+    text-decoration: none;
+}
+.books-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.title-decoration{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.title-decoration hr{
+    width: 112px;
+    margin: 0;
+    border:none;
+    border-bottom: 4px solid; 
+    border-radius: 5px;
+}
+
+.book{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+    
+
+}
+.book img{
+    width: 250px;
+    height: 400px;
+    
+}
+
+
+
+
+.livres{
+    display: flex;
+    flex-direction: column;
+}
+.btn-basket:hover{
+    background-color: #fec541fd;
+} 
+.btn-basket{
+    
+    width: 140px;
+    padding: 15px 20px;
+    height: 50px; 
+    border:none;
+    font-family: poppins;
+    background-color: #faba26;
+    border-radius: 15px;
+    font-size: 0.7rem;
+    cursor: pointer;
+    display: flex;
+    margin-bottom: 20px;
+}
+@media only screen and (max-width:430px) {
+    
+    .about{
+        display: flex;
+        flex-direction: column;
+        gap:0;
+        padding-bottom: 20px;
+        
+    }
+    .about .right{
+        width: 90%;
+    }
+ .about .left{
+    text-align: center;
+    width: 40%;
+    margin-left: 0;
+ }
+ .about .left img{
+    width: 100%;
+ }
+  
+    
+}
+@media only screen and (max-width:928px) {
+
+    .list2{
+        font-size: 1rem;
+        padding: 5px 5vw;
+        
+        
+        
+    }
+   
+    
+}
+@media only screen and (max-width:630px) {
+    .footer1{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        padding: 10px 0 10px 60px;
+    }
+    
+}
+@media only  screen and (max-width:545px) {
+    .navbar{
+        padding-right: 10px;
+    }
+    .icon-box i,.basket-groupe i{
+        font-size:0.7rem ;
+    }
+    .logo img {
+        width: 90px;
+    }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap:70px;
+        }
+    
+   }
+@media only screen and (max-width:791px) {
+    .my-btn{
+        display: block;
+    }
+    .list2{
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-bottom: 20px;
+       }
+        .list2 ul{
+            display: none;
+        }
+    
+        .sidebar-container{
+            display: flex;
+            flex-direction: column;
+        }
+       
+        .sidebar-container{
+            width: 100vw;
+        }
+        body{
+            margin: 100px 0 0 0 ;
+        }
+    }

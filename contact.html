@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link href="./contact.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./images/logsb.png" />
+    <script src="https://kit.fontawesome.com/8d62a07aa6.js"crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header class="navbar">
+
+        <div class="logo">
+          <a href="home-page.html"> <img src="./images/log1.png" height="150px" /></a> 
+
+        </div>
+
+
+
+
+        <div class="icon-box">
+            
+            <i class="far fa-user"></i>
+            <div class="basket-groupe">
+                <i class="fa-solid fa-cart-shopping"></i>
+            <p id="score-basket">(0) </p>
+            </div>
+
+        </div>
+
+    </header>
+    
+
+        
+        <!-- <div class="cross" onclick="Close()" ><i class="fas fa-times"></i></div> -->
+        <div class="list2">
+            <i onclick="openclose()" class="  fas fa-bars my-btn"></i> 
+            <ul class="list">
+                <li> <a href="#nouveautes">Nouveautés</a></li>
+                <li> <a href="#promotions">promotions</a></li>
+                <li> <a href="#meileurs ventes">Meilleures ventes</a></li>
+            </ul>
+        </div>
+       
+    
+
+
+    
+    <div class="sidebar-container close">
+        <ul>
+            <li class="tendances"> Tendances</li>
+                <li> <a href="#nouveautes">Nouveautés</a></li>
+                <li> <a href="#promotions">promotions</a></li>
+                <li> <a href="#meileurs ventes">Meilleures ventes</a></li>
+            <li class="categories"> Categories</li>
+                <li > <a href="livres -tunisiens.html"> Livres tunisiens</a></li>
+                <li> <a href=""> Livres de developpement personels</a></li>
+                <li> <a href="romans.html"> romans</a></li>
+       </ul>
+    </div>
+   
+    <div class="form-container">
+        <div class="left-container">   
+        </div>
+        <form id="form" class="form">
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" placeholder="florinpop17" id="username" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small >Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Email</label>
+                <input type="email" placeholder="a@florin-pop.com" id="email" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small >Error message</small>
+            </div>
+            <div class="form-control">
+                <label>Message</label>
+                <textarea class="my-input " placeholder="Message"></textarea>
+            </div>
+           
+            <button>Submit</button>
+        </form>
+    </div> 
+    <div class="about">
+        <div class="left">
+            <img src="./images/log1.png" width="180px"/>
+        </div>
+        <div class="right">
+            KITEBY est une librairie en ligne qui propose une large
+            sélection de l'offre éditoriale tunisienne (en français et en
+            arabe), ainsi que des ouvrages édités en France. Les achats sur
+            notre site s'effectuent de manière fiable et sécurisée
+        </div>
+    </div>
+
+
+    <hr>
+    <footer>
+        <div class="footer1">
+            <div class="contact">
+                <div class="row">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p> Aouina Diar Soukra</p>
+                </div>
+                <div class="row">
+                    <i class="fas fa-phone"></i>
+                    <p> 5214666</p>
+                </div>
+                <div class="row">
+                    <i class="fas fa-envelope"></i>
+                    <p> chaymaamouri02@gmail.com</p>
+                </div>
+            </div>
+            <div class="liens">
+                <p> Liens utiles</p>
+                <a href="./livres -tunisiens.html"><p> livres tunisiens</p></a>
+                <a href="./romans.html"><p>romans</p></a>
+                <a href="./livres anglais.html"><p> livres anglais</p></a>
+            </div>
+            <div class="liens">
+                <a href="./livres -tunisiens.html"><p> Nouveautes</p></a>
+                <a href="./romans.html"><p>promotions</p></a>
+                <a href="./livres anglais.html"><p>meilleurs ventes</p></a>
+                <a href="contact.html"><p>Contactez-nous</p></a>
+            </div>
+            <div class="new">
+                <div class="part1">
+                    <p> ABONNEZ VOUS<br> A NEWSLETTER</p>
+                    <input type="adress" placeholder="votre e-mail">
+                </div>
+                <button> S'abonner</button>
+            </div>
+        </div>
+
+        <div class="footer2">
+            <div class="copyright">
+                <i class="fas fa-copyright"></i>
+                <p> Copyright KITEBY</p>
+            </div>
+        </div>
+    </footer>
+</body>
+   
+    <script>
+        
+    function openClose() {
+        sidebar = document.querySelector(".sidebar-container");
+        btn = document.querySelector(".my-btn");
+        if (sidebar.className === "sidebar-container") {
+          sidebar.classList.add("close");
+          btn.classList.add("fa-bars");
+          btn.classList.remove("fa-times");
+        } else {
+          sidebar.classList.remove("close");
+          btn.classList.add("fa-times");
+          btn.classList.remove("fa-bars");
+          
+        }
+      }
+      
+      btn = document.querySelector(".my-btn");
+      btn.addEventListener("click", () => openClose());
+    </script>
+    

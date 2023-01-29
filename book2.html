@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pour l'amour d'Elena</title>
+        <link href="./book2.css" rel="stylesheet"/>
+        <link rel="icon" type="image/png" href="./images/logsb.png" />
+        <script src="https://kit.fontawesome.com/8d62a07aa6.js"crossorigin="anonymous"></script>
+    </head>
+    <body>
+       
+        <header class="navbar">
+            <!-- <i onclick="openclose()" class="fas fa-bars my-btn"></i> -->
+            <div class="logo">
+                <a href="home-page.html"> <img src="./images/log1.png" height="150px" /></a>
+            </div>
+            <div class="icon-box">
+                <i class="far fa-user"></i>
+                <div class="basket-groupe">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p id="score-basket">(0) </p>
+                </div>
+
+            </div>   
+        </header>
+   
+        
+        <div class="list2">
+           
+           
+            <ul>
+                    
+                    <li > <a href="./livres -tunisiens.html"> Livres tunisiens</a></li>
+                    <li> <a href="./livres devleppement personel.html"> livres de developpemnt personel</a></li>
+                    <li> <a href="./romans.html"> romans</a></li>
+           </ul>
+           
+        </div> 
+        <div class="sidebar-container close">
+
+            <ul class="navigation-mobile">
+                <li class="tendances"> Tendances</li>
+                    <li> <a href="#nouveautes">Nouveautés</a></li>
+                    <li> <a href="#promotions">promotions</a></li>
+                    <li> <a href="#meileurs ventes">Meilleures ventes</a></li>
+                <li class="categories"> Categories</li>
+                    <li > <a href="./livres -tunisiens.html"> Livres tunisiens</a></li>
+                    <li> <a href="./livres-anglais.css"> Livres en anglais</a></li>
+                    <li> <a href="./romans.html"> romans</a></li>
+           </ul>
+        </div>
+        <div class="container">
+            <div class="left">
+                <div class="book-div" onclick="openModal()">
+                    <img src="./images/elena.jpg"  class="image" />
+                </div>
+                <div onclick="closeModal(event)" class="modal-container close">
+                    <div class="modal">
+                        <i onclick="closeModal(event)" class="fas fa-times close-btn"></i>
+                        <img src="./images/elena.jpg" height="80%" alt="img" />
+                        <a href="form.html"><button class="commande-button">
+                                commander</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+
+                <div class="tit-code">
+                    <article class="titre"> Pour l'amour de l'Elena</article>
+                    <article class="auteur"> Yasmina Khadhra</article>
+                    <article class="code"> Code d'article:9782266321730</article>
+                    <article class="prix">28.00 TND</article>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+
+                    </div>
+                </div>
+                <div id="resume">
+                    <article class="soustitre"> Resumé:</article>
+                    <article class="resume">A l'Enclos de la Trinité, un trou
+                        perdu dans l’État mexicain de Chihuahua, Elena et Diego
+                        s'aiment depuis l'enfance. On les appelle les " fiancés
+                        ". Un jour, Elena est sauvagement agressée sous les yeux
+                        de Diego, tétanisé. Le rêve se brise comme un miroir.
+                        Elena s'enfuit à Ciudad Juárez, la ville la plus
+                        dangereuse au monde. Diego doit se perdre dans l'enfer
+                        des cartels pour tenter de sauver l'amour de sa vie.
+                        Pour l'amour d'Elena s'inspire librement d'une histoire
+                        vraie.</article>
+                    <a href="#description"> lire la suite</a>
+                </div>
+
+
+                <div class="nb-art">
+                    <div class="quantite">
+                        <p> Quantité:</p>
+                        <input type="number" id="number" value="1">
+                        <div class="stock">
+                            <p> En stock</p>
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="button-basket">
+                        <button onclick="addbasket()" class="basket"> Ajouter au
+                            panier</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="about">
+            <div class="left">
+                <img src="./images/log1.png" width="180px"/>
+            </div>
+            <div class="right">
+                KITEBY est une librairie en ligne qui propose une large
+                sélection de l'offre éditoriale tunisienne (en français et en
+                arabe), ainsi que des ouvrages édités en France. Les achats sur
+                notre site s'effectuent de manière fiable et sécurisée
+            </div>
+        </div>
+
+
+        <hr>
+        <footer>
+            <div class="footer1">
+                <div class="contact">
+                    <div class="row">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p> Aouina Diar Soukra</p>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-phone"></i>
+                        <p> 5214666</p>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-envelope"></i>
+                        <p> chaymaamouri02@gmail.com</p>
+                    </div>
+                </div>
+                <div class="liens">
+                    <p> Liens utiles</p>
+                    <a href="./livres -tunisiens.html"><p> livres tunisiens</p></a>
+                    <a href="./romans.html"><p>romans</p></a>
+                    <a href="./livres anglais.html"><p> livres anglais</p></a>
+                </div>
+                <div class="liens">
+                    <a href="./livres -tunisiens.html"><p> Nouveautes</p></a>
+                    <a href="./romans.html"><p>promotions</p></a>
+                    <a href="./livres anglais.html"><p>meilleurs ventes</p></a>
+                    <a href="contact.html"><p>Contactez-nous</p></a>
+                </div>
+                <div class="new">
+                    <div class="part1">
+                        <p> ABONNEZ VOUS<br> A NEWSLETTER</p>
+                        <input type="adress" placeholder="votre e-mail">
+                    </div>
+                    <button> S'abonner</button>
+                </div>
+            </div>
+
+            <div class="footer2">
+                <div class="copyright">
+                    <i class="fas fa-copyright"></i>
+                    <p> Copyright KITEBY</p>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+
+    
+function openClose() {
+    sidebar = document.querySelector(".sidebar-container");
+    btn = document.querySelector(".my-btn");
+    if (sidebar.className === "sidebar-container") {
+      sidebar.classList.add("close");
+      btn.classList.add("fa-bars");
+      btn.classList.remove("fa-times");
+    } else {
+      sidebar.classList.remove("close");
+      btn.classList.add("fa-times");
+      btn.classList.remove("fa-bars");
+      
+    }
+  }
+  
+  btn = document.querySelector(".my-btn");
+  btn.addEventListener("click", () => openClose());
+    function openModal() {
+        let modal = document.querySelector(".modal-container")
+        modal.classList.remove('close')
+    }
+    function closeModal(event) {
+        let modal = document.querySelector(".modal-container")
+        if ((event.target.className === "modal-container") || (event.target.className === "fas fa-times close-btn")) {
+            modal.classList.add('close')
+        }
+
+    }
+
+
+       function    addbasket()
+{
+    let score=0
+    let basket=document.getElementById("score-basket") 
+    score=score+1
+    basket.innerHTML="("+ score +")" 
+    
+}
+
+
+
+
+</script>
+    </body>
+</html>
